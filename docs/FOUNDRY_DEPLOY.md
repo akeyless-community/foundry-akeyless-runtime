@@ -10,10 +10,10 @@ In the hosted agent project `requirements.txt` (or `pyproject.toml`):
 akeyless-foundry-runtime>=0.1.0
 ```
 
-Until PyPI is live, pin GitHub:
+Or install from [PyPI](https://pypi.org/project/akeyless-foundry-runtime/):
 
-```text
-akeyless-foundry-runtime @ git+https://github.com/akeyless-community/foundry-akeyless-runtime.git@v0.1.0
+```bash
+pip install akeyless-foundry-runtime
 ```
 
 ## 2. Fetch secrets in code

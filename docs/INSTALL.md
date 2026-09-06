@@ -4,7 +4,7 @@ You do **not** need to clone this repository to use the library. Add it as a dep
 
 ## Option 1: PyPI (recommended)
 
-Once published:
+Published as [akeyless-foundry-runtime](https://pypi.org/project/akeyless-foundry-runtime/) (`0.1.0`).
 
 ```bash
 pip install akeyless-foundry-runtime
@@ -21,8 +21,6 @@ In your agent's `requirements.txt`:
 ```text
 akeyless-foundry-runtime>=0.1.0
 ```
-
-> **Note:** PyPI publishing is in progress. Until the package is live, use Option 2 below.
 
 ## Option 2: Install directly from GitHub (no clone)
 
@@ -52,7 +50,7 @@ pip install "akeyless-foundry-runtime[mcp] @ git+https://github.com/akeyless-com
 ## Option 4: MCP server CLI only
 
 ```bash
-pip install "akeyless-foundry-runtime[mcp] @ git+https://github.com/akeyless-community/foundry-akeyless-runtime.git@v0.1.0"
+pip install 'akeyless-foundry-runtime[mcp]'
 
 export AKEYLESS_ACCESS_ID=p-xxxxx
 export AKEYLESS_SECRET_PREFIX=/foundry-agents/my-agent/production

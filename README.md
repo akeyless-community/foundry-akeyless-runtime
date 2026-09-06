@@ -4,7 +4,8 @@ Fetch [Akeyless](https://www.akeyless.io) secrets at **runtime** on [Microsoft F
 
 Built on the [Akeyless Python SDK](https://pypi.org/project/akeyless/) with Foundry-specific auth defaults, path conventions, caching, and optional MCP tools.
 
-**Repository:** [github.com/akeyless-community/foundry-akeyless-runtime](https://github.com/akeyless-community/foundry-akeyless-runtime)
+**Repository:** [github.com/akeyless-community/foundry-akeyless-runtime](https://github.com/akeyless-community/foundry-akeyless-runtime)  
+**PyPI:** [akeyless-foundry-runtime](https://pypi.org/project/akeyless-foundry-runtime/)
 
 ## Documentation
 
@@ -35,24 +36,28 @@ Foundry Hosted Agents assign a dedicated Microsoft Entra identity at deploy time
 
 **No git clone needed.** Add to your agent project and install with pip.
 
-### From PyPI (recommended once published)
+### From PyPI (recommended)
 
 ```bash
 pip install akeyless-foundry-runtime
 ```
 
-See [docs/PYPI_PUBLISHING.md](docs/PYPI_PUBLISHING.md) for maintainer setup. The package is not on PyPI yet — use GitHub install below until the first release is published.
-
-### From GitHub (available once the repo is public)
+With optional extras:
 
 ```bash
-pip install "akeyless-foundry-runtime @ git+https://github.com/akeyless-community/foundry-akeyless-runtime.git@v0.1.0"
+pip install 'akeyless-foundry-runtime[mcp]'
 ```
 
 Add to your Foundry agent `requirements.txt`:
 
 ```text
-akeyless-foundry-runtime @ git+https://github.com/akeyless-community/foundry-akeyless-runtime.git@v0.1.0
+akeyless-foundry-runtime>=0.1.0
+```
+
+### From GitHub (fallback)
+
+```bash
+pip install "akeyless-foundry-runtime @ git+https://github.com/akeyless-community/foundry-akeyless-runtime.git@v0.1.0"
 ```
 
 Full install guide: **[docs/INSTALL.md](docs/INSTALL.md)**

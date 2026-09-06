@@ -1,6 +1,12 @@
 # Publishing to PyPI
 
-Step-by-step guide to publish `akeyless-foundry-runtime` to PyPI using [trusted publishing](https://docs.pypi.org/trusted-publishers/) (no API tokens in GitHub Secrets).
+**Live:** [pypi.org/project/akeyless-foundry-runtime](https://pypi.org/project/akeyless-foundry-runtime/) (`0.1.0`).
+
+```bash
+pip install akeyless-foundry-runtime
+```
+
+This page is for **future releases**. Use [trusted publishing](https://docs.pypi.org/trusted-publishers/) (no API tokens in GitHub Secrets).
 
 ## Do you need a public GitHub repo?
 
@@ -79,3 +85,4 @@ python3 -c "from akeyless_foundry import __version__; print(__version__)"
 | `Trusted publishing exchange failure` | Verify PyPI publisher owner/repo/workflow name match exactly |
 | `File already exists` on PyPI | Bump version — versions cannot be re-uploaded |
 | Workflow doesn't run | Release must be **published**, not draft |
+| `Non-user identities cannot create new projects` | Pending publisher **PyPI project name** must be `akeyless-foundry-runtime` (the package name), not `foundry-akeyless-runtime` (the GitHub repo). Delete the empty wrong-name project on PyPI, recreate the pending publisher, then re-run. |
