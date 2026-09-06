@@ -1,0 +1,1 @@
+akeyless-foundry-runtime[mcp] @ git+https://github.com/akeyless-community/foundry-akeyless-runtime.git@v0.1.0
